@@ -4,6 +4,10 @@
 }
 
 .new {
+    transform: translateY(100%);
+}
+
+.new {
     max-width: 100%;
     height: auto;
 }
