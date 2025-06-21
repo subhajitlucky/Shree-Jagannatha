@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../styles/HeroSection.css'
-import oldTempleImage from '../assets/temple-old.jpg'
-import newTempleImage from '../assets/temple-new.jpg'
+import oldTempleImage from '/src/assets/temple-old.jpg'
+import newTempleImage from '/src/assets/temple-new.jpg'
 
 function HeroSection() {
   const [showNewImage, setShowNewImage] = useState(false)
