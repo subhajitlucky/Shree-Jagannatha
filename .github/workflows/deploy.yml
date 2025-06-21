@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -36,9 +36,17 @@ jobs:
         npm ci
         
     - name: Build
+      env:
+        GITHUB_ACTIONS: true
       run: |
         cd client
         npm run build
+        
+    - name: Fix paths for GitHub Pages
+      run: |
+        cd client/dist
+        cp index.html 404.html
+        ls -la
         
     - name: Setup Pages
       uses: actions/configure-pages@v4

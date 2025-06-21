@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../styles/HeroSection.css'
+import oldTempleImage from '../../public/assets/temple-old.jpg'
+import newTempleImage from '../../public/assets/temple-new.jpg'
 
 function HeroSection() {
   const [showNewImage, setShowNewImage] = useState(false)
@@ -17,17 +19,17 @@ function HeroSection() {
     <section className="hero-section">
       <div className="image-container">
         <img 
-          src="/temple-old.jpg" 
+          src={oldTempleImage} 
           alt="Shree Jagannatha Temple - Historical View" 
           className="temple-image old-temple"
         />
         <img 
-          src="/temple-new.jpg" 
+          src={newTempleImage} 
           alt="Shree Jagannatha Temple - Modern View" 
           className={`temple-image new-temple ${showNewImage ? 'slide-in' : ''}`}
         />
       </div>
-     
+      
     </section>
   )
 }
