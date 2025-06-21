@@ -41,7 +41,7 @@ A beautiful, modern React-based website dedicated to promoting tourism and provi
    ```
 
 5. **Open your browser**
-   Navigate to `http://localhost:5173` to view the website
+   Navigate to `http://localhost:3000` to view the website
 
 ### Build for Production
 
@@ -49,28 +49,76 @@ A beautiful, modern React-based website dedicated to promoting tourism and provi
 npm run build
 ```
 
+## 🌐 Deployment
+
+This project is configured for deployment on both **GitHub Pages** and **Vercel**.
+
+### 📄 **GitHub Pages Deployment**
+
+#### Automatic Deployment (Recommended)
+- Push changes to the `main` branch
+- GitHub Actions will automatically build and deploy
+- Website will be available at: `https://subhajitlucky.github.io/Shree-Jagannatha/`
+
+#### Manual Deployment
+```bash
+cd client
+npm install gh-pages --save-dev
+npm run deploy:gh
+```
+
+### ⚡ **Vercel Deployment**
+
+#### Method 1: Vercel CLI
+1. Install Vercel CLI: `npm i -g vercel`
+2. In the `client` directory: `vercel`
+3. Follow the prompts
+
+#### Method 2: Vercel Dashboard
+1. Go to [vercel.com](https://vercel.com)
+2. Import your GitHub repository
+3. Set the root directory to `client`
+4. Deploy automatically
+
+#### Method 3: Deploy Button
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/subhajitlucky/Shree-Jagannatha&project-name=shree-jagannatha&root-directory=client)
+
+### 🔧 **Deployment Configuration**
+
+The project includes:
+- **GitHub Actions workflow** (`.github/workflows/deploy.yml`)
+- **Vercel configuration** (`client/vercel.json`)
+- **Base path configuration** for GitHub Pages in `vite.config.js`
+- **Deployment scripts** in `package.json`
+
 ## 🎯 Project Structure
 
 ```
 Shree-Jagannatha/
+├── .github/workflows/      # GitHub Actions for auto-deployment
 ├── client/                 # React application
 │   ├── public/            # Static assets and temple images
+│   ├── src/               # Source code
+│   │   ├── components/    # Reusable React components
+│   │   ├── styles/        # Component-specific CSS files
+│   │   ├── pages/         # Page components
 │   │   ├── App.jsx        # Main application component
-│   │   ├── App.css        # Styling and animations
 │   │   └── main.jsx       # Application entry point
+│   ├── vercel.json        # Vercel deployment configuration
 │   └── package.json       # Dependencies and scripts
 ├── img/                   # Original temple images (old)
 ├── img new/              # Original temple images (new)
-└── README.md             # Project documentation
+├── README.md             # Project documentation
+└── ROADMAP.md            # Development roadmap
 ```
 
 ## 🎨 Key Animation Features
 
 ### Image Transition Effect
 - **Initial State**: Displays the historical temple image
-- **Transition**: After 1.5 seconds, the modern temple image slides in from the left
-- **Duration**: 2-second smooth transition with easing
-- **Effect**: Creates a stunning "through time" visualization
+- **Transition**: After 2 seconds, the modern temple image gradually reveals from left to right
+- **Duration**: 3-second smooth transition with easing
+- **Effect**: Creates a stunning "erasing/painting" visualization showing the temple through time
 
 ### Interactive Elements
 - Hover effects on feature cards
@@ -84,6 +132,7 @@ Shree-Jagannatha/
 - **Build Tool**: Vite 6.3.5
 - **Styling**: Pure CSS with custom animations
 - **Development**: ESLint for code quality
+- **Deployment**: GitHub Pages + Vercel
 
 ## 🎭 Website Sections
 
