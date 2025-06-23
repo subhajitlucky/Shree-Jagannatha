@@ -2,6 +2,39 @@
 
 A beautiful, modern React-based website dedicated to promoting tourism and providing comprehensive information about the sacred Shree Jagannatha Temple in Puri, Odisha, India.
 
+## 📊 Project Progress
+
+![Progress](https://img.shields.io/badge/Progress-25%25-yellow?style=for-the-badge&logo=react)
+![Phase](https://img.shields.io/badge/Current_Phase-Foundation_Complete-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active_Development-blue?style=for-the-badge)
+
+```
+🚀 Foundation & Core Features     ████████████████████▓░░░░░░░░░  85% ✅
+📚 Content Enhancement          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0% ⏳
+🌟 Interactive Features         ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0% ⏳
+🔧 Advanced Features            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0% ⏳
+🌐 Community & Social           ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0% ⏳
+⚡ Performance & Optimization   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0% ⏳
+
+Overall Progress: ████████░░░░░░░░░░░░░░░░░░░░░░░░ 25%
+```
+
+### 🎯 **What's Completed**
+- ✅ **React + Vite Foundation** - Modern development setup
+- ✅ **Hero Animation** - Stunning temple image transition
+- ✅ **Core Sections** - Welcome, Features, Footer
+- ✅ **Responsive Design** - Mobile-first approach
+- ✅ **Deployment Ready** - GitHub Pages + Vercel setup
+- ✅ **CI/CD Pipeline** - Automatic deployment workflow
+
+### 🚧 **Next Milestones**
+- 📚 **Temple Information Hub** - Detailed history and significance  
+- 🎭 **Rath Yatra Central** - Festival guide and calendar
+- 🗺️ **Virtual Tour** - Interactive temple exploration
+- 📱 **Multi-language Support** - English, Hindi, Odia
+
+*See [ROADMAP.md](./ROADMAP.md) for complete development timeline*
+
 ## ✨ Features
 
 - **🎭 Stunning Visual Experience**: Dynamic image transition animation showcasing the temple's historical evolution
