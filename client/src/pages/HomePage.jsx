@@ -1,18 +1,16 @@
-import HeroSection from '../components/HeroSection'
-import WelcomeSection from '../components/WelcomeSection'
-import FeaturesSection from '../components/FeaturesSection'
-import Footer from '../components/Footer'
-import '../styles/HomePage.css'
+import HeroSection from "../components/homepage/HeroSection";
+import AboutSection from "../components/homepage/AboutSection";
+import FestivalsSection from "../components/homepage/FestivalsSection";
+import DeitiesSection from "../components/homepage/DeitiesSection";
 
-function HomePage() {
+// The new Homepage component
+export default function HomePage() {
   return (
-    <div className="homepage">
+    <>
       <HeroSection />
-      <WelcomeSection />
-      <FeaturesSection />
-      <Footer />
-    </div>
-  )
-}
-
-export default HomePage 
+      <AboutSection />
+      <FestivalsSection />
+      <DeitiesSection />
+    </>
+  );
+} 
