@@ -1,15 +1,16 @@
+import { Flex, Box } from '@chakra-ui/react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 // This component wraps page content with the Navbar and Footer
 export default function MainLayout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-text-dark font-sans">
+    <Flex direction="column" minH="100vh" bg="brand.50" color="brand.900">
       <Navbar />
-      <main className="flex-grow">
+      <Box flex="1">
         {children}
-      </main>
+      </Box>
       <Footer />
-    </div>
+    </Flex>
   );
 } 

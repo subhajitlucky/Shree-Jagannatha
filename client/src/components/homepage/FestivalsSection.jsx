@@ -1,43 +1,46 @@
-// A section to highlight the major festivals.
+import { Box, Heading, Text, SimpleGrid, Card, Image } from '@chakra-ui/react';
+
 export default function FestivalsSection() {
   const festivals = [
     {
       name: "Rath Yatra",
       description: "The grand chariot festival, where the deities embark on a public procession.",
-      image: "/assets/temple-new.jpg" // Placeholder - replace with festival images
+      image: "/assets/temple-new.jpg" // Placeholder
     },
     {
       name: "Snana Yatra",
       description: "The divine bathing ceremony of the deities, a prelude to the Rath Yatra.",
-      image: "/assets/temple-old.jpg" // Placeholder - replace with festival images
+      image: "/assets/temple-old.jpg" // Placeholder
     },
     {
       name: "Nabakalebara",
       description: "The unique and sacred ritual of the recreation of the wooden idols.",
-      image: "/assets/temple-new.jpg" // Placeholder - replace with festival images
+      image: "/assets/temple-new.jpg" // Placeholder
     }
   ];
 
   return (
-    <section className="py-20 bg-primary">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold font-serif text-white mb-12">Major Festivals</h2>
-        <div className="flex flex-wrap -mx-4">
+    <Box as="section" py="20" bg="brand.100">
+      <Box maxW="container.lg" mx="auto" px="6" textAlign="center">
+        <Heading as="h2" size="2xl" fontFamily="heading" color="brand.700" mb="12">
+          Major Festivals
+        </Heading>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="8">
           {festivals.map((festival, index) => (
-            <div key={index} className="w-full md:w-1/3 px-4 mb-8">
-              <div className="bg-background rounded-lg shadow-2xl overflow-hidden">
-                <div className="w-full h-48 bg-secondary">
-                  <img src={festival.image} alt={festival.name} className="w-full h-full object-contain"/>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold font-serif text-primary mb-2">{festival.name}</h3>
-                  <p className="text-text-dark font-sans">{festival.description}</p>
-                </div>
-              </div>
-            </div>
+            <Card.Root key={index} shadow="2xl">
+              <Image src={festival.image} alt={festival.name} h="48" objectFit="contain" />
+              <Card.Body p="6">
+                <Heading as="h3" size="xl" fontFamily="heading" color="brand.600" mb="2">
+                  {festival.name}
+                </Heading>
+                <Text color="brand.900">
+                  {festival.description}
+                </Text>
+              </Card.Body>
+            </Card.Root>
           ))}
-        </div>
-      </div>
-    </section>
+        </SimpleGrid>
+      </Box>
+    </Box>
   );
 } 

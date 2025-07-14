@@ -1,4 +1,5 @@
-// A section to introduce the Holy Trinity.
+import { Box, Heading, Text, SimpleGrid, Card, Image } from '@chakra-ui/react';
+
 export default function DeitiesSection() {
   const deities = [
     {
@@ -19,23 +20,27 @@ export default function DeitiesSection() {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold font-serif text-primary mb-12">The Holy Trinity</h2>
-        <div className="flex flex-wrap justify-center -mx-4">
+    <Box as="section" py="20" bg="brand.50">
+      <Box maxW="container.lg" mx="auto" px="6" textAlign="center">
+        <Heading as="h2" size="2xl" fontFamily="heading" color="brand.700" mb="12">
+          The Holy Trinity
+        </Heading>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="8">
           {deities.map((deity, index) => (
-            <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-                <div className="w-32 h-32 rounded-full mx-auto mb-4 bg-background overflow-hidden">
-                  <img src={deity.image} alt={deity.name} className="w-full h-full object-contain"/>
-                </div>
-                <h3 className="text-2xl font-bold font-serif text-secondary mb-2">{deity.name}</h3>
-                <p className="text-text-dark font-sans">{deity.description}</p>
-              </div>
-            </div>
+            <Card.Root key={index} shadow="lg" _hover={{ transform: 'scale(1.05)', transition: 'transform 0.3s' }}>
+              <Card.Body>
+                <Image src={deity.image} alt={deity.name} borderRadius="full" boxSize="32" mx="auto" mb="4" objectFit="contain" />
+                <Heading as="h3" size="xl" fontFamily="heading" color="brand.600" mb="2">
+                  {deity.name}
+                </Heading>
+                <Text color="brand.900">
+                  {deity.description}
+                </Text>
+              </Card.Body>
+            </Card.Root>
           ))}
-        </div>
-      </div>
-    </section>
+        </SimpleGrid>
+      </Box>
+    </Box>
   );
 } 

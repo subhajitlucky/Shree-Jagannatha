@@ -1,22 +1,30 @@
+import { Box, Heading, Text, Button } from '@chakra-ui/react';
+
 export default function HeroSection() {
   return (
-    <div
-      className="relative bg-cover bg-center h-[85vh] flex items-center justify-center text-center"
-      // Using a local image from the public folder
-      style={{ backgroundImage: "url('/assets/temple-new.jpg')" }}
+    <Box
+      position="relative"
+      bgImage="url('/assets/temple-new.jpg')"
+      bgSize="cover"
+      bgPosition="center"
+      h="85vh"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      textAlign="center"
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 p-4">
-        <h1 className="text-5xl md:text-7xl font-bold font-serif text-white leading-tight">
+      <Box position="absolute" inset="0" bg="black" opacity="0.5" />
+      <Box position="relative" zIndex="10" p="4">
+        <Heading as="h1" size={{ base: '3xl', md: '4xl' }} fontFamily="heading" color="white" mb="4">
           Experience the Divine
-        </h1>
-        <p className="mt-4 text-lg md:text-xl font-sans text-text-light">
+        </Heading>
+        <Text fontSize={{ base: 'lg', md: 'xl' }} color="white" mb="8">
           Discover the ancient traditions and spiritual serenity of the Shree Jagannatha Temple.
-        </p>
-        <button className="mt-8 px-8 py-3 bg-accent hover:bg-secondary text-white font-bold rounded-full transition-colors duration-300">
+        </Text>
+        <Button colorPalette="brand" size="lg" rounded="full">
           Explore the History
-        </button>
-      </div>
-    </div>
+        </Button>
+      </Box>
+    </Box>
   );
 } 
