@@ -25,9 +25,9 @@ export default function FestivalsSection() {
         <Heading as="h2" size="2xl" fontFamily="heading" color="brand.700" mb="12">
           Major Festivals
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="8">
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: "8", md: "12" }} gap="6">
           {festivals.map((festival, index) => (
-            <Card.Root key={index} shadow="2xl">
+            <Card.Root key={index} shadow="2xl" mx="2" border="1px solid" borderColor="brand.200">
               <Image src={festival.image} alt={festival.name} h="48" objectFit="contain" />
               <Card.Body p="6">
                 <Heading as="h3" size="xl" fontFamily="heading" color="brand.600" mb="2">

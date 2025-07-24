@@ -25,10 +25,10 @@ export default function DeitiesSection() {
         <Heading as="h2" size="2xl" fontFamily="heading" color="brand.700" mb="12">
           The Holy Trinity
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing="8">
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: "8", md: "12" }} gap="6">
           {deities.map((deity, index) => (
-            <Card.Root key={index} shadow="lg" _hover={{ transform: 'scale(1.05)', transition: 'transform 0.3s' }}>
-              <Card.Body>
+            <Card.Root key={index} shadow="lg" mx="2" _hover={{ transform: 'scale(1.05)', transition: 'transform 0.3s' }}>
+              <Card.Body p="6">
                 <Image src={deity.image} alt={deity.name} borderRadius="full" boxSize="32" mx="auto" mb="4" objectFit="contain" />
                 <Heading as="h3" size="xl" fontFamily="heading" color="brand.600" mb="2">
                   {deity.name}
