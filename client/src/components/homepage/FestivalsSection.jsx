@@ -5,17 +5,17 @@ export default function FestivalsSection() {
     {
       name: "Rath Yatra",
       description: "The grand chariot festival, where the deities embark on a public procession.",
-      image: "/assets/temple-new.jpg" // Placeholder
+      image: "/assets/RathYatra.jpg"
     },
     {
       name: "Snana Yatra",
       description: "The divine bathing ceremony of the deities, a prelude to the Rath Yatra.",
-      image: "/assets/temple-old.jpg" // Placeholder
+      image: "/assets/snanajatra.jpeg"
     },
     {
       name: "Nabakalebara",
       description: "The unique and sacred ritual of the recreation of the wooden idols.",
-      image: "/assets/temple-new.jpg" // Placeholder
+      image: "/assets/nabakalebara.jpg"
     }
   ];
 

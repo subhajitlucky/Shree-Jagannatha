@@ -3,19 +3,19 @@ import { Box, Heading, Text, SimpleGrid, Card, Image } from '@chakra-ui/react';
 export default function DeitiesSection() {
   const deities = [
     {
-      name: "Lord Jagannatha",
-      description: "The Lord of the Universe, a form of Vishnu. His large, round eyes signify his compassion for all beings.",
-      image: "/assets/temple-new.jpg" // Placeholder
-    },
-    {
       name: "Lord Balabhadra",
       description: "The elder brother of Jagannatha, considered to be an incarnation of Shesha.",
-      image: "/assets/temple-old.jpg" // Placeholder
+      image: "/assets/lordbalabhadra.jpg"
     },
     {
       name: "Devi Subhadra",
       description: "The sister of Jagannatha and Balabhadra, a symbol of divine energy.",
-      image: "/assets/temple-new.jpg" // Placeholder
+      image: "/assets/lordsubhadra.jpg"
+    },
+    {
+      name: "Lord Jagannatha",
+      description: "The Lord of the Universe, a form of Vishnu. His large, round eyes signify his compassion for all beings.",
+      image: "/assets/lordjagannatha.jpeg"
     }
   ];
 
@@ -29,7 +29,7 @@ export default function DeitiesSection() {
           {deities.map((deity, index) => (
             <Card.Root key={index} shadow="lg" mx="2" _hover={{ transform: 'scale(1.05)', transition: 'transform 0.3s' }}>
               <Card.Body p="6">
-                <Image src={deity.image} alt={deity.name} borderRadius="full" boxSize="32" mx="auto" mb="4" objectFit="contain" />
+                <Image src={deity.image} alt={deity.name} borderRadius="full" boxSize="32" mx="auto" mb="4" objectFit="cover" />
                 <Heading as="h3" size="xl" fontFamily="heading" color="brand.600" mb="2">
                   {deity.name}
                 </Heading>
