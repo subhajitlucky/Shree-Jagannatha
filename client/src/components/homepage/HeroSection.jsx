@@ -1,4 +1,5 @@
 import { Box, Heading, Text, Button, Image, Flex } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -51,7 +52,7 @@ export default function HeroSection() {
             Bathed in golden sunlight, the Shree Jagannatha Temple stands as a living testament to centuries of devotion, where every stone tells a story of faith that transcends time.
           </Text>
           
-          <Button colorPalette="brand" size="lg" rounded="full">
+          <Button as={RouterLink} to="/history" colorPalette="brand" size="lg" rounded="full">
             Discover Sacred History
           </Button>
         </Box>

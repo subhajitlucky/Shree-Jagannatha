@@ -1,4 +1,5 @@
 import { Box, Heading, Text, Button, Flex, Image } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function AboutSection() {
   return (
@@ -11,7 +12,7 @@ export default function AboutSection() {
           <Text fontSize="lg" color="brand.900" mb="6">
             The Shree Jagannatha Temple in Puri is one of the most revered Vaishnava sites in India, and one of the original Char Dham pilgrimage sites for Hindus. This brief introduction will share the temple's profound history and enduring spiritual significance.
           </Text>
-          <Button colorPalette="brand" rounded="full">
+          <Button as={RouterLink} to="/history" colorPalette="brand" rounded="full">
             Read More
           </Button>
         </Box>
