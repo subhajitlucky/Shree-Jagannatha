@@ -61,9 +61,7 @@ export default function HistoryPage() {
                 worshipped Neela Madhaba, a blue-hued deity, in the dense forests of what is now Puri.
               </Text>
               <Text mb="4" fontSize="lg" lineHeight="1.7">
-                These folk traditions celebrated the unity of nature and spirit, laying the foundation for the later 
-                Jagannatha cult. The tribal worship emphasized the formless divine taking crude wooden forms, 
-                a concept that would become central to Jagannatha worship.
+                These folk traditions celebrated the unity of nature and spirit, laying the foundation for the later Jagannatha devotional tradition. The tribal worship emphasized the formless divine taking crude wooden forms, a concept that would become central to Jagannatha worship.
               </Text>
             </VStack>
             <Box flex="1">
