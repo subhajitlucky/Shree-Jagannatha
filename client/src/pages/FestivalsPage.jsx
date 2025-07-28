@@ -20,19 +20,20 @@ export default function FestivalsPage() {
       <Container maxW="container.lg" py="12">
         {/* Rath Yatra - Main Festival */}
         <Box bg="white" p="8" borderRadius="lg" shadow="lg" mb="12" border="2px solid" borderColor="brand.300">
-          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
-            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+          <HStack spacing={{ base: "0", md: "8" }} align="stretch" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} flex={{ base: "none", md: "1" }}>
               <Image
                 src="/assets/RathYatra.jpg"
                 alt="Rath Yatra festival"
                 borderRadius="lg"
                 shadow="lg"
                 w="100%"
-                h={{ base: "250px", md: "300px" }}
+                h={{ base: "250px", md: "100%" }}
+                minH={{ md: "300px" }}
                 objectFit="cover"
               />
             </Box>
-            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }} spacing="4">
               <Badge colorPalette="brand" size="lg" mb="2">GRAND FESTIVAL</Badge>
               <Heading as="h2" size="2xl" color="brand.700" mb="4">
                 Rath Yatra - The Festival of Chariots

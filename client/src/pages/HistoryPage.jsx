@@ -53,19 +53,20 @@ export default function HistoryPage() {
           <Heading as="h2" size="xl" mb="6" color="brand.700">
             Origins and Tribal Worship
           </Heading>
-          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
-            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+          <HStack spacing={{ base: "0", md: "8" }} align="stretch" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} flex={{ base: "none", md: "1" }}>
               <Image
                 src="/assets/temple-old.jpg"
                 alt="Old view of Shree Jagannatha Temple"
                 borderRadius="lg"
                 shadow="lg"
                 w="100%"
-                h={{ base: "250px", md: "auto" }}
+                h={{ base: "250px", md: "100%" }}
+                minH={{ md: "300px" }}
                 objectFit="cover"
               />
             </Box>
-            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }} spacing="4">
               <Text mb="4" fontSize="lg" lineHeight="1.7">
                 Long before the grand temple rose on the eastern coast, local tribal communities revered the cosmic form
                 of the divine through simple log carvings and forest shrines. The Sabara tribe, indigenous to the region,
@@ -181,19 +182,20 @@ export default function HistoryPage() {
           <Heading as="h2" size="xl" mb="6" color="brand.700">
             The Grand Rath Yatra: Festival of the Universe
           </Heading>
-          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
-            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+          <HStack spacing={{ base: "0", md: "8" }} align="stretch" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} flex={{ base: "none", md: "1" }}>
               <Image
                 src="/assets/RathYatra.jpg"
                 alt="Rath Yatra Festival"
                 borderRadius="lg"
                 shadow="lg"
                 w="100%"
-                h={{ base: "250px", md: "auto" }}
+                h={{ base: "250px", md: "100%" }}
+                minH={{ md: "300px" }}
                 objectFit="cover"
               />
             </Box>
-            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }} spacing="4">
               <Text mb="4" fontSize="lg" lineHeight="1.7">
                 Since ancient times, the annual Ratha Yatra (Chariot Festival) has drawn millions to Puri, 
                 making it one of the world's largest religious gatherings. The festival typically occurs in 
