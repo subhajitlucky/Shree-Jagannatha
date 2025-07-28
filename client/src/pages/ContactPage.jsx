@@ -1,5 +1,5 @@
 import { Container, Heading, Text, Box, VStack, HStack, SimpleGrid, Link, Icon } from '@chakra-ui/react';
-import { PhoneIcon, EmailIcon, ExternalLinkIcon } from '@chakra-ui/icons';
+import { FiPhone, FiMail, FiExternalLink } from 'react-icons/fi';
 
 export default function ContactPage() {
   return (
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 
                 <Box>
                   <HStack spacing="3" mb="2">
-                    <Icon as={PhoneIcon} color="brand.600" boxSize="5" />
+                    <Icon as={FiPhone} color="brand.600" boxSize="5" />
                     <Text fontWeight="bold" color="brand.700">Phone:</Text>
                   </HStack>
                   <VStack align="start" spacing="1">
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 
                 <Box>
                   <HStack spacing="3" mb="2">
-                    <Icon as={EmailIcon} color="brand.600" boxSize="5" />
+                    <Icon as={FiMail} color="brand.600" boxSize="5" />
                     <Text fontWeight="bold" color="brand.700">Email:</Text>
                   </HStack>
                   <VStack align="start" spacing="1">
@@ -136,7 +136,7 @@ export default function ContactPage() {
                 fontWeight="bold"
                 _hover={{ textDecoration: 'underline' }}
               >
-                Open in Google Maps <Icon as={ExternalLinkIcon} boxSize="4" ml="1" />
+                Open in Google Maps <Icon as={FiExternalLink} boxSize="4" ml="1" />
               </Link>
             </Box>
           </Box>
