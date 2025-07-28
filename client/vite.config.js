@@ -7,9 +7,6 @@ const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    include: ['@chakra-ui/icons'],
-  },
   // Set base path for GitHub Pages, otherwise use root.
   base: isGitHubPages ? '/Shree-Jagannatha/' : '/',
   build: {
