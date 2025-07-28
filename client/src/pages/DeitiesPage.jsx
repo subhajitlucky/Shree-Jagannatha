@@ -104,8 +104,19 @@ export default function DeitiesPage() {
           <Heading as="h2" size="xl" mb="6" color="brand.700" textAlign="center">
             Nabakalebara: The Sacred Renewal
           </Heading>
-          <HStack spacing="8" align="start">
-            <VStack flex="1" align="start">
+          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+              <Image
+                src="/assets/nabakalebara.jpg"
+                alt="Nabakalebara ceremony"
+                borderRadius="lg"
+                shadow="lg"
+                w="100%"
+                h={{ base: "250px", md: "auto" }}
+                objectFit="cover"
+              />
+            </Box>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
               <Text fontSize="lg" lineHeight="1.8" mb="4">
                 Every 12-19 years, the wooden idols undergo Nabakalebara - a mystical renewal ceremony where 
                 new idols are carved from sacred neem trees. This ancient ritual symbolizes the eternal cycle 
@@ -121,15 +132,6 @@ export default function DeitiesPage() {
                 transcends physical form while choosing to manifest for the devotees' sake.
               </Text>
             </VStack>
-            <Box flex="1">
-              <Image
-                src="/assets/nabakalebara.jpg"
-                alt="Nabakalebara ceremony"
-                borderRadius="lg"
-                shadow="lg"
-                w="100%"
-              />
-            </Box>
           </HStack>
         </Box>
 

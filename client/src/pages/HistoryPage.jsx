@@ -53,8 +53,19 @@ export default function HistoryPage() {
           <Heading as="h2" size="xl" mb="6" color="brand.700">
             Origins and Tribal Worship
           </Heading>
-          <HStack spacing="8" align="start">
-            <VStack flex="1" align="start">
+          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+              <Image
+                src="/assets/temple-old.jpg"
+                alt="Old view of Shree Jagannatha Temple"
+                borderRadius="lg"
+                shadow="lg"
+                w="100%"
+                h={{ base: "250px", md: "auto" }}
+                objectFit="cover"
+              />
+            </Box>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
               <Text mb="4" fontSize="lg" lineHeight="1.7">
                 Long before the grand temple rose on the eastern coast, local tribal communities revered the cosmic form
                 of the divine through simple log carvings and forest shrines. The Sabara tribe, indigenous to the region,
@@ -64,15 +75,6 @@ export default function HistoryPage() {
                 These folk traditions celebrated the unity of nature and spirit, laying the foundation for the later Jagannatha devotional tradition. The tribal worship emphasized the formless divine taking crude wooden forms, a concept that would become central to Jagannatha worship.
               </Text>
             </VStack>
-            <Box flex="1">
-              <Image
-                src="/assets/temple-old.jpg"
-                alt="Old view of Shree Jagannatha Temple"
-                borderRadius="lg"
-                shadow="lg"
-                w="100%"
-              />
-            </Box>
           </HStack>
         </Box>
 
@@ -179,8 +181,19 @@ export default function HistoryPage() {
           <Heading as="h2" size="xl" mb="6" color="brand.700">
             The Grand Rath Yatra: Festival of the Universe
           </Heading>
-          <HStack spacing="8" align="start">
-            <VStack flex="1" align="start">
+          <HStack spacing={{ base: "0", md: "8" }} align="start" flexDirection={{ base: "column", md: "row" }}>
+            <Box order={{ base: "1", md: "2" }} mb={{ base: "6", md: "0" }} width="100%">
+              <Image
+                src="/assets/RathYatra.jpg"
+                alt="Rath Yatra Festival"
+                borderRadius="lg"
+                shadow="lg"
+                w="100%"
+                h={{ base: "250px", md: "auto" }}
+                objectFit="cover"
+              />
+            </Box>
+            <VStack flex="1" align="start" order={{ base: "2", md: "1" }}>
               <Text mb="4" fontSize="lg" lineHeight="1.7">
                 Since ancient times, the annual Ratha Yatra (Chariot Festival) has drawn millions to Puri, 
                 making it one of the world's largest religious gatherings. The festival typically occurs in 
@@ -198,15 +211,6 @@ export default function HistoryPage() {
                 to everyone, as people from all castes and communities can touch the chariots and offer prayers.
               </Text>
             </VStack>
-            <Box flex="1">
-              <Image
-                src="/assets/RathYatra.jpg"
-                alt="Rath Yatra Festival"
-                borderRadius="lg"
-                shadow="lg"
-                w="100%"
-              />
-            </Box>
           </HStack>
         </Box>
 
