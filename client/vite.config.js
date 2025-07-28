@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const isGitHub = process.env.GITHUB_ACTIONS === 'true';
+// Determine if building for GitHub Pages
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -10,7 +11,7 @@ export default defineConfig({
     include: ['@chakra-ui/icons'],
   },
   // Set base path for GitHub Pages, otherwise use root.
-  base: isGitHub ? '/Shree-Jagannatha/' : '/',
+  base: isGitHubPages ? '/Shree-Jagannatha/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

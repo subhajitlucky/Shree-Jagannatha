@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy:gh": "npm run build && gh-pages -d dist",
-    "predeploy": "npm run build"
+    "deploy:gh": "cross-env GITHUB_PAGES=true npm run build && gh-pages -d dist",
+    "predeploy": "cross-env GITHUB_PAGES=true npm run build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^3.0.0",
