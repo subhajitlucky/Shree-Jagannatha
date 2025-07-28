@@ -40,7 +40,7 @@ export default function FAQsPage() {
     },
     {
       question: "Can foreigners visit the temple?",
-      answer: "Yes, the temple welcomes visitors from all nationalities and religions. Everyone must follow the same dress code and rules regardless of their background."
+      answer: "No, only Hindus are allowed inside the main sanctum. Foreign visitors may explore the outer temple complex but are not permitted inside the inner sanctum. All visitors must follow the prescribed dress code and temple regulations."
     },
     {
       question: "Is there a separate queue for senior citizens?",
