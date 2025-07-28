@@ -15,6 +15,8 @@ export default function Navbar() {
     { label: 'Festivals', path: '/festivals' },
     { label: 'Visit', path: '/visit' },
     { label: 'Gallery', path: '/gallery' },
+    { label: 'FAQs', path: '/faqs' },
+    { label: 'Contact', path: '/contact' },
   ];
 
   return (

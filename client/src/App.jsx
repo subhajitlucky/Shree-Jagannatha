@@ -6,6 +6,8 @@ import DeitiesPage from "./pages/DeitiesPage";
 import FestivalsPage from "./pages/FestivalsPage";
 import VisitPage from "./pages/VisitPage";
 import GalleryPage from "./pages/GalleryPage";
+import FAQsPage from "./pages/FAQsPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/festivals" element={<MainLayout><FestivalsPage /></MainLayout>} />
         <Route path="/visit" element={<MainLayout><VisitPage /></MainLayout>} />
         <Route path="/gallery" element={<MainLayout><GalleryPage /></MainLayout>} />
+        <Route path="/faqs" element={<MainLayout><FAQsPage /></MainLayout>} />
+        <Route path="/contact" element={<MainLayout><ContactPage /></MainLayout>} />
       </Routes>
     </BrowserRouter>
   );
