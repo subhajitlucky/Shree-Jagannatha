@@ -13,7 +13,7 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/icons": "^3.0.0",
     "@chakra-ui/react": "^3.22.0",
     "@emotion/react": "^11.14.0",
     "puppeteer": "^24.15.0",
